@@ -25,7 +25,7 @@ public class MachineServiceImpl implements MachineService<Machine> {
             machines.addAll(new ExcavatorProducer().get());
             return machines;
         }
-        return machines;
+        return new ArrayList<>();
     }
 
     @Override
